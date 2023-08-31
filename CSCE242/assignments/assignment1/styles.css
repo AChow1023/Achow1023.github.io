@@ -1,0 +1,23 @@
+body{
+    background:rgb(218, 92, 92);
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p {
+    color:rgb(71, 46, 143);
+}
+
+table{
+
+    color:rgb(94, 35, 123);
+}
+td, th{
+    border: 1px solid rgb(32, 32, 100);
+    background:pink;
+}
+th{
+    background:rgb(0, 128, 126);
+}

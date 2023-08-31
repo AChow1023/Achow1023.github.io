@@ -12,6 +12,15 @@ p {
     color:aquamarine
 }
 
+/*Table*/
 table{
+
     color:darkorchid;
+}
+td, th{
+    border: 1px solid blue;
+    background:pink;
+}
+th{
+    background:green;
 }
