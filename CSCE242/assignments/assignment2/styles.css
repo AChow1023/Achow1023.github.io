@@ -1,0 +1,69 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(images/penguins3.jpg);
+}
+
+
+#content{
+    background: rgba(106, 106, 203, 0.95);
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 10px, 10px, rgb(53, 101, 117);
+}
+
+p {
+    color:rgb(50, 36, 91);
+}
+
+#paragraph{
+    background: rgb(90, 108, 169);
+    width: 80%;
+    height: 80%;
+}
+
+table{
+    color:rgb(94, 35, 123);
+    border: 5px solid rgb(167, 167, 223);
+}
+
+td, th{
+    border: 1px solid rgb(32, 32, 100);
+    
+    background:rgb(103, 152, 221);
+}
+th{
+    background:rgb(0, 128, 126);
+}
+
+
+img{
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+img{
+    border: 5px solid rgb(29, 101, 163);
+    padding: 5px;
+    margin: 10px;
+}
+
+#links a{
+    background: rgb(92, 189, 165);
+    color:black;
+    border-radius:5px;
+}
+
+#links a:hover{
+    background: black;
+    color: white;
+}
+
+#links{
+    border-radius: 5px;
+    width: 10%;
+    margin: auto;
+    padding: 5px;
+}

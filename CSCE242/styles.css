@@ -1,0 +1,29 @@
+body{
+    background:rgb(127, 216, 146);
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content{
+    background-color:rgb(141, 240, 240);
+    width: 25%;
+}
+
+h1{
+    color:rgb(47, 79, 108);
+}
+
+p{
+    color:rgb(31, 102, 33);
+}
+
+h2{
+    color:rgb(47, 79, 108);
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
