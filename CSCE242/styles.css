@@ -19,7 +19,12 @@ p{
 }
 
 h2{
+    background-color:rgb(112, 228, 116);
     color:rgb(47, 79, 108);
+}
+
+ul{
+    
 }
 
 a{
@@ -27,3 +32,8 @@ a{
     color:black;
 }
 
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: lightblue;
+    }
+}
