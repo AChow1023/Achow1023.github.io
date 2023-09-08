@@ -4,10 +4,10 @@ body{
 
 #main-nav{
     background: gray;
-}
-
-#main-nav ul{
-    padding: 10;
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-bottom: 5px;
+    size: 30%;
 }
 
 #main-nav li{
@@ -15,34 +15,122 @@ body{
 }
 #main-nav a{
     text-decoration: none;
+    font-size: 20px;
     color: white;
+    padding: 50px;
+    white-space: nowrap;
+}
+
+.second-layer{
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-bottom: 5px;
 }
 
 .main-content{
     background-color:lightgray;
-    padding:5px;
+    margin-right: 20px;
+    padding: 5px;
 }
 
 .sidebar{
     background-color:lightgray;
-    padding:5px;
+    padding-right: 90px;
+    margin: auto;
+}
+
+.third-layer{
+    margin-left: 265px;
+    margin-right: 265px;
+    margin-bottom: 5px;
+}
+
+.col1of2{
+    background-color:lightgreen;
+    border: 3px solid blue;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.col1of3{
+    color: white;
+}
+.col1of3 p{
+    background-color: blue;
+    padding: 30px;
+    margin: 5px;
+}
+
+.col1{
+    margin-left: 5px;
+}
+
+.images img{
+    margin: 5px;
+}
+
+#main-footer{
+    background-color: gray;
+    color: white;
+    margin-left: 270px;
+    margin-right: 270px;
+    
+}
+
+h5{
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 768px){
 
-    
-    .main-header{
+
+    h1{
+        display: flex;
         justify-content: center;
     }
     
     #main-nav ul{
         display:flex;
         justify-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
     .second-layer{
         display:flex;
-        justify-content: space-around;
+        
     }
+
+    .main-content{
+
+    }
+
+    .third-layer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .col1of3{
+        display: flex;
+    }
+    .col1of3 p{
+        justify-content: space-evenly;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-middle, #footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-loc1, .footer-loc2{
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+    
 }
