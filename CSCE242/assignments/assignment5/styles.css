@@ -365,6 +365,10 @@ h6{
 #main-footer a{
     color:white;
     text-decoration: none;
+    font-size: small;
+}
+#main-footer a:hover{
+    background-color: rgb(212, 77, 77);
 }
 #main-footer ul{
     padding-left: 1%;
@@ -376,11 +380,46 @@ h6{
     size: 1.5em;
 }
 
+/*Columns*/
+.col1of2-2{
+    margin: auto;
+    padding: 10px;
+}
+#col2{
+    padding-top: 6.7%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#col3{
+    padding-top: 2.4%;
+}
+.images-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*bottom footer*/
+.bottom-footer{
+    border-top:2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bottom-footer li{
+    list-style-type: none;
+}
+.bottom-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid white;
+}
 
 @media only screen and (min-width: 600px){
 
     /*Main header*/
-    .hor-nav ul, .flex-container, .piped, .search-bar, .main-head-img, .second-part, .third-part, .fourth-part, .sixth-part, .seventh-part, .eigth-part, .tenth-part{
+    .hor-nav ul, .flex-container, .piped, .search-bar, .main-head-img, .second-part, .third-part, .fourth-part, .sixth-part, .seventh-part, .eigth-part, .tenth-part, .bottom-footer ul, .col1of2-2{
         display: flex;
     }
 
@@ -425,8 +464,10 @@ h6{
     }
     .images-flex{
         display: flex;
+        justify-content: space-around;
     }
-    .col1of2-2{
-        display: flex;
+    
+    .bottom-footer ul{
+        justify-content: center;
     }
 }
