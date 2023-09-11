@@ -1,0 +1,432 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/*header*/
+
+#main-header{
+    background-color:black;
+    color:white;
+    margin:auto;
+    width: 80%;
+}
+
+#main-header h1{
+    font-family: 'Times New Roman', Times, serif;
+    width:50%;
+}
+
+#gateways ul{
+    list-style-type: none;
+    font-size:x-small;
+}
+
+#gateways a:hover{
+    background-color: red;
+}
+
+.main-head-img{
+    padding: 20px;
+}
+
+.main-head-img h1{
+    padding-left: 5px;
+}
+
+.piped li{
+    border-left: 1px solid white;
+}
+
+#main-header a{
+    text-decoration: none;
+    color:white;
+}
+
+/*gateways*/
+
+.hor-nav a{
+    margin: 0px 5px;
+}
+
+/*Search bar*/
+.search-bar{
+    padding: 5px;
+}
+
+/*first part*/
+/*Main nav*/
+.first-part{
+    background:url(https://place-hold.it/300x300/666);
+}
+
+#main-nav{
+    background-color: maroon;
+    
+}
+#main-nav ul{
+    list-style-type: none;
+    font-size: large;
+    padding: 1%;
+}
+#main-nav a{
+    text-decoration: none;
+    color:white;
+}
+#main-nav a:hover{
+    background-color: red;
+    border: 15px solid rgb(111, 15, 15);
+}
+.content1{
+    padding-top: 20%;
+}
+.content1 h2{
+    font-size:300%;
+    color:white;
+    background-color:maroon;
+    width: 54%;
+}
+.content1 #p1, .content #p2{
+    width:40%;
+    margin: auto;
+}
+.content1 #p1{
+    font-size: large;
+}
+.content1 #p2{
+    font-size: small;
+    padding: 2%;
+}
+.content1-background{
+    background-color: white;
+}
+
+/*second part*/
+
+.content2{
+    background-color: maroon;
+    color:white;
+    padding-top: 40%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.content2 h3{
+    font-size:xx-large;
+    width:60%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content2 p{
+    width:60%;
+}
+
+/*third part*/
+
+.content3{
+    color:white;
+    background-color: black;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+.content3 h4{
+    font-size: xx-large;
+}
+.content3 p, .content3 h4{
+    width: 80%;
+}
+.content3 a{
+    color: white;
+    background-color: maroon;
+    border: 2px solid white;
+    font-size:large;
+    padding:15px;
+    font-weight: bold;
+}
+.content3 a:hover{
+    color: maroon;
+    background-color: white;
+    border:1px solid maroon;
+}
+
+/*fourth part*/
+
+.fourth-part{
+    background-color: lightgray;
+    padding: 30px;
+    margin: auto;
+}
+.content4{
+    padding-left: 20px;
+}
+.content4 h5{
+    color: maroon;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.content4 p{
+    width: 80%;
+    padding-bottom:20px;
+}
+.content4 a{
+    color: white;
+    background-color: maroon;
+    padding: 15px;
+    font-size:larger;
+}
+
+/*fifth part*/
+
+.fifth-part{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.col1of4{
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.col-content{
+    padding: 10px;
+    width: 60%;
+}
+.col-content h7{
+    color: maroon;
+    font-weight: bold;
+}
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: maroon;
+    margin:auto;
+    padding: 20px;
+}
+.fifth-part a{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    font-size: small;
+    color: maroon;
+    text-decoration: none;
+}
+
+/*sixth part*/
+
+.sixth-part{
+    background-color: maroon;
+}
+.content6{
+    color: white;
+    margin: auto;
+    padding-left: 40px;
+}
+.content6 h8{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.content6 p{
+    padding-bottom: 15px;
+}
+.content6 a{
+    color:white;
+    text-decoration: none;
+    font-size: x-large;
+    background-color: black;
+    border: 3px solid white;
+    padding: 15px;
+}
+
+/*seventh part*/
+
+.seventh-part{
+    background-color: white;
+}
+.seventh-part img{
+    margin: auto;
+}
+.content7{
+    width: 55%;
+    padding-left: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content7 h9{
+    font-size:xx-large;
+    color:maroon;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.content7 p{
+    padding-bottom: 20px;
+}
+.content7 a{
+    background-color: maroon;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/*eigth part*/
+.eigth-part{
+    background-color: rgb(16, 55, 69);
+}
+.content8{
+    color: white;
+    margin: auto;
+    width: 30%;
+}
+.content8 h10{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.content8 p{
+    padding-bottom: 20px;;
+}
+.content8 a{
+    color: white;
+    background-color: maroon;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    border: 3px solid white;
+}
+.content8 a:hover{
+    color: maroon;
+    background: white;
+    border: 2px solid maroon;
+}
+
+/*ninth part*/
+
+.ninth-part{
+    background:url(https://place-hold.it/1000x1000/666);
+}
+.content9-bottom{
+    padding-top:30%;
+    padding-bottom: 7%;
+}
+.content9{
+    width: 40%;
+    background-color: maroon;
+    margin-left:10%;
+    padding: 5%;
+}
+.content9 h11{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.content9 p{
+    padding: 15px;
+    color: white;
+}
+.content9 a{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/*tenth part*/
+.tenth-part{
+    background-color: white;
+}
+.content10{
+    margin: auto;
+    width: 40%;
+}
+.content10 h12{
+    font-size: xx-large;
+    font-weight: bold;
+    color: maroon;
+}
+.content10 p{
+    padding-bottom: 10px;
+}
+.content10 a{
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*footer*/
+#main-footer{
+    background-color: maroon;
+    color: white;
+}
+#main-footer a{
+    color:white;
+    text-decoration: none;
+}
+#main-footer ul{
+    padding-left: 1%;
+}
+#main-footer li{
+    list-style-type: none;
+}
+.footer-logo-text{
+    size: 1.5em;
+}
+
+
+@media only screen and (min-width: 600px){
+
+    /*Main header*/
+    .hor-nav ul, .flex-container, .piped, .search-bar, .main-head-img, .second-part, .third-part, .fourth-part, .sixth-part, .seventh-part, .eigth-part, .tenth-part{
+        display: flex;
+    }
+
+    #gateways{
+        justify-content: flex-end;
+    }
+
+    .flex-container{
+        justify-content: space-between;
+    }
+    
+    .search-bar{
+        justify-content: flex-end;
+    }
+
+    #main-nav ul{
+        justify-content: center;
+        justify-content: space-around;
+
+    }
+    .content1 p{
+        justify-content: center;
+        flex:1;
+    }
+
+    .col1of4{
+        flex:1;
+    }
+
+    h6{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fifth-part a{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .col1of2{
+        flex:1;
+    }
+    .images-flex{
+        display: flex;
+    }
+    .col1of2-2{
+        display: flex;
+    }
+}
