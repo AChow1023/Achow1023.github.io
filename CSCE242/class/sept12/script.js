@@ -11,6 +11,7 @@ const hidePenguin = () =>{
     document.getElementById("penguin").classList.add("hide");
 }
 
+
 window.onload = () =>{
     document.getElementById("button-click").onclick = changeText;
     document.getElementById("button-show").onclick = showPenguin;

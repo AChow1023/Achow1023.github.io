@@ -1,0 +1,107 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+/*header*/
+h1{
+    background-color: coral;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+}
+
+#main-nav-items ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+}
+
+#main-nav-items{
+    background-color: lightgray;
+    margin:auto;
+}
+
+#main-nav-items p{
+    text-align: center;
+    color: orangered;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+}
+
+#nav-toggle div{
+    width: 35px;
+    height: 5px;
+    background-color:coral;
+    margin: 6px 0;
+}
+
+/*Who's the oldest*/
+#WTO{
+    background-color:coral;
+    width: 500px;
+    margin: auto;
+}
+
+#input-items ul{
+    list-style-position: inside;
+}
+
+#input-items li{
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: center;
+}
+#age{
+    padding-left: 14px;
+}
+#compare-age-butt{
+    padding: 10px;
+}
+#compare-age{
+    padding: 10px;
+}
+
+/*Fund Raising*/
+#FR{
+    background-color:coral;
+    width: 500px;
+    margin:auto;
+}
+#display-butt, #funds-raised{
+    padding: 5px;
+}
+
+#gradient{
+    width: 100px;
+    height: 400px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: white;
+}
+
+#gradient.t{
+    background-image: linear-gradient(0deg, red  25%, white  25%);
+}
+#gradient.f{
+    background-image: linear-gradient(0deg, red 50%, white 50%);
+}
+#gradient.s{
+    background-image: linear-gradient(0deg, red 75%, white 75%);
+}
+#gradient.white{
+    background-color: white;
+}
+
+@media (min-width: 900px){
+    #main-nav-items{
+        display: flex;
+        justify-content: space-around;
+    }
+    #nav-toggle{
+        display:none;
+    }
+}
