@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+
+.main-header{
+    background-color: blue;
+    text-align: center;
+}
+
+/*running man*/
+#run-man{
+    background-color: blue;
+    width: 500px;
+    height: 100px;
+    margin:auto;
+}
+#running-man{
+    position: relative;
+}
+
+/*fund raising*/
+#fund-raising{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    margin:auto;
+}
+#gradient{
+    width: 100px;
+    height: 350px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: white;
+}
+
+#gradient.t{
+    background-image: linear-gradient(0deg, red  25%, white  25%);
+}
+#gradient.f{
+    background-image: linear-gradient(0deg, red 50%, white 50%);
+}
+#gradient.s{
+    background-image: linear-gradient(0deg, red 75%, white 75%);
+}
+#gradient.white{
+    background-color: white;
+}
+
+@media (min-width: 900px){
+    .main-items{
+        
+    }
+}
