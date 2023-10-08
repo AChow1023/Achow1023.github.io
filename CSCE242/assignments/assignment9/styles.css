@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+
+header{
+    background-color: rgb(74, 74, 185);
+    text-align: center;
+}
+
+.hidden{
+    display:none;
+}
+
+/*quotes*/
+#quotes-id{
+    background-color: rgb(74, 74, 185);
+    width: 400px;
+    height: 200px;
+}
+h2{
+    text-align: center;
+}
+
+/*rainbow*/
+
+#rainbow-id{
+    background-color: rgb(74, 74, 185);
+    width: 400px;
+    height: 200px;
+}
+h3{
+    text-align: center;
+}
+#draw-rainbow-butt{
+    background-color: black;
+    color: rgb(74, 74, 185);
+    width: 100px;
+    margin: 10px;
+}
+#red{
+    background-color: red;
+    color:red;
+    width: 300px;
+    margin: auto;
+}
+#orange{
+    background-color: orange;
+    color: orange;
+    width: 300px;
+    margin: auto;
+}
+#yellow{
+    background-color: yellow;
+    color: yellow;
+    width: 300px;
+    margin: auto;
+}
+#green{
+    background-color: green;
+    color:green;
+    width: 300px;
+    margin: auto;
+}
+#blue{
+    background-color: blue;
+    color: blue;
+    width: 300px;
+    margin: auto;
+}
+#purple{
+    background-color: purple;
+    color: purple;
+    width: 300px;
+    margin: auto;
+}
+#pot-of-gold{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 250px;
+
+}
+
+
+@media (min-width: 900px){
+    #flex{
+        display: flex;
+        justify-content: space-around;
+    }
+}
