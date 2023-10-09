@@ -31,6 +31,28 @@ body{
     margin-right: 5px;
 }
 
+/*Projects*/
+#projects{
+    background-color:rgb(141, 240, 240);
+    border:3px solid rgb(84, 173, 173);
+    width: 80%;
+    margin:auto;
+    text-align: center;
+}
+
+#projects ul{
+    padding-left:0;
+}
+
+#projects li{
+    list-style-type: none;
+    background-color: rgb(112, 172, 228);
+    border:5px solid rgb(76, 76, 245);
+    margin-bottom:15px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
 h1{
     color:rgb(47, 79, 108);
 }
@@ -60,6 +82,14 @@ a{
     }
 
     #content ul{
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #projects li{
+        width:30%;
+    }
+    #projects ul{
         display:flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
