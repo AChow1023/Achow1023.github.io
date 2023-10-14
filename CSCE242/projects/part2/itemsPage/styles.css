@@ -43,6 +43,11 @@ h2{
 
 #content ul{
     list-style-type: none;
+    
+}
+#content li{
+    background-color: rgb(136, 136, 136,.6);
+    border: 1px solid black;
 }
 #content a{
     text-decoration: none;
@@ -52,7 +57,7 @@ h2{
     position: relative;
     margin:auto;
     text-align: center;
-    background-color: rgb(136, 136, 136,.6);
+    
     z-index: 2;
 }
 #content #image{
@@ -66,7 +71,7 @@ h2{
     margin-right: auto;
     margin-top: -400px;
     z-index: 1;
-    opacity: 5 5%;
+    opacity: 75%;
 }
 
 @media (min-width: 900px){
@@ -76,5 +81,10 @@ h2{
     }
     #content p{
         width: 900px;
+    }
+}
+@media (max-width: 900px){
+    #content #ror-pic{
+        display: none;
     }
 }
