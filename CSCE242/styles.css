@@ -65,6 +65,11 @@ h2{
     background-color:rgb(112, 172, 228);
     color:rgb(47, 79, 108);
 }
+h3{
+    background-color:rgb(112, 172, 228);
+    color:rgb(47, 79, 108);
+    font-size: x-large;
+}
 
 a{
     text-decoration: none;
