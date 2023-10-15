@@ -48,27 +48,22 @@ h2{
     background-color: rgb(136, 136, 136,.6);
     z-index: 2;
 }
+#content #questions{
+    text-align: center;
+    list-style: none;
+
+}
+#content #questions li{
+    padding: 5px;
+}
 #content #ror-pic{
     position:relative;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
     z-index: 1;
     opacity: 5 5%;
-}
-
-/*comments*/
-
-#comment-section{
-    background-color: rgb(69, 65, 65);
-    color: rgb(107, 107, 226);
-}
-#comment{
-    border: 5px solid white;
-    width: 500%;
-}
-#comment p{
-    padding: 15px;
 }
 
 @media (min-width: 900px){
@@ -79,8 +74,8 @@ h2{
     #content p{
         width: 900px;
     }
-    .flex{
-        display:flex;
+    #content #questions ul{
+        display: flex;
         justify-content: space-around;
     }
 }
