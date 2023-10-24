@@ -58,6 +58,13 @@ h2{
     opacity: 5 5%;
 }
 
+/*video*/
+#video{
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+}
+
 @media (min-width: 900px){
     #main-nav-items ul{
         display:flex;

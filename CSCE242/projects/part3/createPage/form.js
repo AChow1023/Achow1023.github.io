@@ -5,8 +5,9 @@ const submitForm = (e) =>{
     const form = document.getElementById("form");
     const uName = form.elements["username"].value;
     const name = form.elements["name"].value;
-    const lName = form.elements["last-name"].value;
-    const email = form.elements["email"].value;
+    const PName = form.elements["page-name"].value;
+    const type = form.elements["type"].value;
+    const userContent = form.elements["user-content"].value;
     const termsChecked = form.elements["terms"].checked;
 }
 document.getElementById("form").onsubmit = submitForm;

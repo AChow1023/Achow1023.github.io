@@ -36,38 +36,37 @@
             <form id="form">
                 <ul id="questions">
                     <li>
-                        <label>Username</label>
-                        <input id="username" required>
+                        <p><label>Username</label></p>
+                        <p><input id="username" required></p>
                     </li>
                     <li>
-                        <label>Name</label>
-                        <input id="name" required>
+                        <p><label id="name-label">Name</label></p>
+                        <p><input id="name-input" required></p>
                     </li>
                     <li>
-                        <label>Page Name</label>
-                        <input id="page-name" required>
+                        <p><label>Page Name</label></p>
+                        <p><input id="page-name" required></p>
                     </li>
                     <li>
-                        <label for="type">Type</label>
-                            <select name="type">
-                                <option value="item">Item</option>
-                                <option value="survivor">Survivor</option>
-                                <option value="environment">Environment</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <p><label>Type</label></p>
+                        <p><select name="type">
+                            <option value="item">Item</option>
+                            <option value="survivor">Survivor</option>
+                            <option value="environment">Environment</option>
+                            <option value="other">Other</option>
+                        </select></p>
                     </li>
                     <li>
-                        <label for="user-content">Content:</label>
-                        <textarea id="user-content"></textarea>
-                    </li>
-                    <li>
+                        <p><label for="user-content">Content:</label></p>
+                        <p><textarea id="user-content"></textarea></p>                    </li>
+                    <li id="checkbox">
                         <input type="checkbox" name="terms">
-                        <label for="terms">I agree to the terms.</label>
+                        <label>I agree to the terms.</label>
                     </li>
                     <li>
-                        <button type="submit">Submit</button>
+                        <p><button type="submit">Submit</button></p>
                     </li>
-                    <li class="hidden">
+                    <li id="hidden">
                         <p id="result">Thank you for submitting!</p>
                     </li>
                 </ul>

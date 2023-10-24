@@ -67,11 +67,21 @@ h2{
 }
 
 /*form*/
+#form{
+    background-color: rgb(136, 136, 136,.6);
+    width: 1000px;
+    margin: auto;
+}
 #user-content{
     min-height: 200px;
 }
 .inline{
     display: inline;
+}
+#checkbox{
+    background-color: rgb(136, 136, 136,.6);
+    width: 890px;
+    margin:auto;
 }
 
 @media (min-width: 900px){
