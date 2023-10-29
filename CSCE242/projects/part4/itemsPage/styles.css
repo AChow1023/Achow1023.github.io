@@ -41,37 +41,28 @@ h2{
     text-align: center;
 }
 
-#content ul{
+#items ul{
     list-style-type: none;
     
 }
-#content li{
+#items li{
     background-color: rgb(136, 136, 136,.6);
     border: 1px solid black;
 }
-#content a{
+#items a{
     text-decoration: none;
     color: black;
 }
-#content p{
+#items p{
     position: relative;
     margin:auto;
     text-align: center;
     
     z-index: 2;
 }
-#content #image{
+#items img{
     width: 70px;
     height: 70px;
-}
-#content #ror-pic{
-    position:relative;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -400px;
-    z-index: 1;
-    opacity: 75%;
 }
 
 @media (min-width: 900px){
@@ -79,7 +70,7 @@ h2{
         display:flex;
         justify-content: space-around;
     }
-    #content p{
+    #items p{
         width: 900px;
     }
     #nav-toggle div{
