@@ -23,7 +23,7 @@
     {
         "color": "Yellow",
         "description": "Yellow items, or boss items are uncommon items that have a chance of dropping when defeating a teleporter boss. Each boss in the game has it's own yellow item that give the player some sort of power related to that boss. These items can make the player extremely powerful, or just be useless.",
-        "img": "images/yellowScrapPic",
+        "img": "images/yellowScrapPic.jfif",
         "link": "#"
     }
 ]

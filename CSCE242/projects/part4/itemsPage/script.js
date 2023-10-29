@@ -1,5 +1,5 @@
-const getMovies = async () => {
-    const url =  "https://github.com/AChow1023/Achow1023.github.io/blob/main/CSCE242/projects/part4/json/items.json";
+const getItems = async () => {
+    const url =  "https://achow1023.github.io/CSCE242/projects/part4/json/items.json";
 
     try {
         const response = await fetch(url);
@@ -16,15 +16,11 @@ const showItems = async () => {
     items.forEach((item) => itemsSection.append(getItemsItem(item)));
 };
 
-const getItems = (item) =>{
+const getItemsItem = (item) =>{
     const itemSection = document.createElement("section");
 
     const content = document.createElement("div");
     itemSection.append(content);
-
-    const h2 = document.createElement("h2");
-    h2.innerText = "Items";
-    content.append(h2);
 
     let ul = document.createElement("ul");
     content.append(ul);
@@ -45,7 +41,7 @@ const getItems = (item) =>{
     let trBot = document.createElement("tr");
     let aBot = document.createElement("a");
     let img = document.createElement("img");
-    img.src = 'https://github.com/AChow1023/Achow1023.github.io/blob/main/CSCE242/projects/part4/itemsPage/' + item.img;
+    img.src = 'https://achow1023.github.io/CSCE242/projects/part4/itemsPage/' + item.img;
     aBot.href = item.link;
     aBot.append(img);
     trBot.append(aBot);
@@ -54,7 +50,7 @@ const getItems = (item) =>{
     li.append(trMid);
     li.append(trBot);
     ul.append(li);
-    return movieSection;
+    return itemSection;
 };
 
 const toggleNav = () =>{
