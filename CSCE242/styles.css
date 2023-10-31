@@ -9,6 +9,10 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#black{
+    color: black;
+}
+
 /*CONTENT*/
 #content{
     background-color:rgb(141, 240, 240);
@@ -29,6 +33,11 @@ body{
     margin-bottom:15px;
     margin-left:5px;
     margin-right: 5px;
+}
+
+#content a{
+    text-decoration: none;
+    color: black;
 }
 
 /*Projects*/
