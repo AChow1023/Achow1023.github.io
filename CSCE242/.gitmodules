@@ -1,3 +1,0 @@
-[submodule "path_to_node"] 
-  path = node
-  url = https://github.com/AChow1023/node.git
