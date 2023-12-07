@@ -18,7 +18,7 @@ const showItems = async () => {
         if(item.img){
             let img = document.createElement("img");
             section.append(img);
-            img.src = "" + item.img;
+            img.src = "https://projectfinal-lw0r.onrender.com/" + item.img;
             }
 
         let ul = document.createElement("ul");
@@ -59,7 +59,7 @@ const showItems = async () => {
 };
 
 const deleteItem = async (item) => {
-    let response = await fetch (`/api/items/${item._id}`, {
+    let response = await fetch (`https://projectfinal-lw0r.onrender.com/api/items/${item._id}`, {
         method: "DELETE",
         headers: {
             "Content-Type":"application/json;charset=utf-8"
@@ -83,7 +83,7 @@ const liTeamItems = (item) => {
 
 const getJSON = async () => {
     try{
-        return (await fetch("/api/items")).json();
+        return (await fetch("https://projectfinal-lw0r.onrender.com/api/items")).json();
     }
     catch(error){
         console.log(error);
@@ -107,13 +107,13 @@ const addEditItem = async (e) => {
     if(form._id.value == -1){
     formData.delete("_id");
     
-    response = await fetch("/api/items", {
+    response = await fetch("https://projectfinal-lw0r.onrender.com/api/items", {
         method: "POST",
         body: formData
     });
     }
     else{
-        response = await fetch(`/api/items/${form._id.value}`, {
+        response = await fetch(`https://projectfinal-lw0r.onrender.com/api/items/${form._id.value}`, {
             method: "PUT",
             body: formData
         });
