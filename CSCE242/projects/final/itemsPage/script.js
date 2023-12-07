@@ -7,7 +7,7 @@ const showItems = async () => {
     itemJSON.forEach((item) =>{
         let a = document.createElement("a");
         a.href = item.link;
-        a.append(section);
+        
         let section = document.createElement("section");
         itemDiv.append(section);
 
@@ -39,6 +39,7 @@ const showItems = async () => {
 
         section.append(eLink);
         section.append(dLink);
+        a.append(section);
 
         eLink.onclick = (e) => {
             e.preventDefault();
