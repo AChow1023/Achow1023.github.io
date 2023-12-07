@@ -8,6 +8,16 @@ body{
     background-color:black;
     margin: 6px 0;
 }
+#add-link{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+#submit-msg{
+    font-size: 1em;
+    margin: auto;
+    margin-right: 100px;
+}
 .hidden{
     display:none;
 }

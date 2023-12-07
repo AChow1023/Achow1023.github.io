@@ -5,22 +5,26 @@ const showItems = async () => {
 
     
     itemJSON.forEach((item) =>{
-        let a = document.createElement("a");
-        a.href = item.link;
-        
         let section = document.createElement("section");
         itemDiv.append(section);
 
         let h3 = document.createElement("h3");
-        h3.innerHTML = item.color;
-        section.append(h3);
+        h3.innerHTML = item.color + ' Items';
+        let aT = document.createElement("a");
+        aT.href = item.link;
+        aT.append(h3);
+        section.append(aT);
 
+        
         if(item.img){
             let img = document.createElement("img");
-            section.append(img);
+            let aB = document.createElement("a");
+            aB.href = item.link;
+            aB.append(img);
+            section.append(aB);
             img.src = "https://projectfinal-lw0r.onrender.com/" + item.img;
             }
-
+        
         let ul = document.createElement("ul");
         
         let liD = document.createElement("li");
@@ -39,7 +43,6 @@ const showItems = async () => {
 
         section.append(eLink);
         section.append(dLink);
-        a.append(section);
 
         eLink.onclick = (e) => {
             e.preventDefault();
