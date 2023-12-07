@@ -28,7 +28,31 @@
             </nav>
         </header>
         <h2>Items</h2>
-        <section id="items"></section>
-        
+        <div id="add-edit-container" class="dialog hidden">
+            <span class="close">&times;</span>
+            <form id="add-edit-form" method="post">
+                <h4 id="add-edit-title">Add Item</h4>
+                <input type="hidden" name="_id" value="-1">
+                <p>
+                    <label for="color">Color</label>
+                    <input type="text" id="color" name="color" required>
+                </p>
+                <p>
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" required>
+                </p>
+                <p>
+                    <label for="link">Link</label>
+                    <input type="text" id="link" name="link">
+                </p>
+                <p>
+                    <label for="img">Upload Image</label>
+                    <input type="file" id="img" name="img">
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
     </body>
 </html>

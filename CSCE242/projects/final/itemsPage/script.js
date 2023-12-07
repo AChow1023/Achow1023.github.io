@@ -1,62 +1,161 @@
-const getItems = async () => {
-    const url =  "https://achow1023.github.io/CSCE242/projects/part4/json/items.json";
+const showItems = async () => {
+    let itemJSON = await getJSON();
+    let itemDiv = document.getElementById("item-list");
+    itemDiv.innerHTML = "";
 
-    try {
-        const response = await fetch(url);
-        return await response.json();
+    
+    itemJSON.forEach((item) =>{
+        let a = document.createElement("a");
+        a.href = item.link;
+        a.append(section);
+        let section = document.createElement("section");
+        itemDiv.append(section);
+
+        let h3 = document.createElement("h3");
+        h3.innerHTML = item.color;
+        section.append(h3);
+
+        if(item.img){
+            let img = document.createElement("img");
+            section.append(img);
+            img.src = "" + item.img;
+            }
+
+        let ul = document.createElement("ul");
+        
+        let liD = document.createElement("li");
+        liD.innerHTML = 'Description: ' + item.description;
+        ul.append(liD);
+
+        section.append(ul);
+        
+        const dLink = document.createElement("a");
+        dLink.innerHTML = "Delete";
+        dLink.id = "delete-link";
+        
+        const eLink = document.createElement("a");
+        eLink.innerHTML = "Edit";
+        eLink.id = "edit-link";
+
+        section.append(eLink);
+        section.append(dLink);
+
+        eLink.onclick = (e) => {
+            e.preventDefault();
+            document.querySelector(".dialog").classList.remove("hidden");
+            document.getElementById("add-edit-title").innerHTML = "Edit Item";
+            document.getElementById("submit-msg").classList.add("hidden");
+            resetForm();
+            populateEditForm(item);
+        };
+        
+        dLink.onclick = (e) => {
+            e.preventDefault();
+            deleteItem(item);
+        };
+    });
+
+    
+};
+
+const deleteItem = async (item) => {
+    let response = await fetch (`/api/items/${item._id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type":"application/json;charset=utf-8"
+        }
+    });
+    if(response.status != 200){
+        console.log("Error deleting");
+        return;
     }
-    catch (error){
+
+    let result = await response.json();
+    showItems();
+    resetForm();
+};
+
+const liTeamItems = (item) => {
+    let li = document.createElement("li");
+    li.innerHTML = item;
+    return li;
+};
+
+const getJSON = async () => {
+    try{
+        return (await fetch("/api/items")).json();
+    }
+    catch(error){
         console.log(error);
     }
 };
 
-const showItems = async () => {
-    let items = await getItems();
-    let itemsSection = document.getElementById("items");
-    items.forEach((item) => itemsSection.append(getItemsItem(item)));
+const populateEditForm = (item) => {
+    const form = document.getElementById("add-edit-form");
+    form._id.value = item._id;
+    form.name.value = item.color;
+    form.height.value = item.description;
+    form.nationality.value = item.link;
 };
 
-const getItemsItem = (item) =>{
-    const itemSection = document.createElement("section");
+const addEditItem = async (e) => {
+    e.preventDefault();
+    const form = document.getElementById("add-edit-form");
+    const formData = new FormData(form);
+    let response;
 
-    const content = document.createElement("div");
-    itemSection.append(content);
-
-    let ul = document.createElement("ul");
-    content.append(ul);
-    let li = document.createElement("li");
-    let trTop = document.createElement("tr");
-    let aTop = document.createElement("a");
-    let h3 = document.createElement("h3");
-    h3.innerText = item.color + 'Items';
-    aTop.href = item.link;
-    aTop.append(h3);
-    trTop.append(aTop);
+    if(form._id.value == -1){
+    formData.delete("_id");
     
-    let trMid = document.createElement("tr");
-    let p = document.createElement("p");
-    p.innerText = item.description;
-    trMid.append(p);
+    response = await fetch("/api/items", {
+        method: "POST",
+        body: formData
+    });
+    }
+    else{
+        response = await fetch(`/api/items/${form._id.value}`, {
+            method: "PUT",
+            body: formData
+        });
+    }
 
-    let trBot = document.createElement("tr");
-    let aBot = document.createElement("a");
-    let img = document.createElement("img");
-    img.src = 'https://achow1023.github.io/CSCE242/projects/part4/itemsPage/' + item.img;
-    aBot.href = item.link;
-    aBot.append(img);
-    trBot.append(aBot);
+    if (form._id.value != -1){
+        showItems();
+    }
+    
+    resetForm();
+    document.querySelector(".dialog").classList.add("hidden");
+    showItems();
+    let submitMsg = document.getElementById("submit-msg");
+    submitMsg.classList.remove("hidden");
+};
 
-    li.append(trTop);
-    li.append(trMid);
-    li.append(trBot);
-    ul.append(li);
-    return itemSection;
+const resetForm = () =>{
+    const form = document.getElementById("add-edit-form");
+    form.reset();
+    form._id = "-1";
+};
+
+const showHideAdd = (e) => {
+    e.preventDefault();
+    document.querySelector(".dialog").classList.remove("hidden");
+    document.getElementById("add-edit-title").innerHTML = "Add Item";
+    document.getElementById("submit-msg").classList.add("hidden");
+    resetForm();
 };
 
 const toggleNav = () =>{
     document.getElementById("main-nav-items").classList.toggle("hidden");
 }
-window.onload = () =>{
+
+window.onload = () => {
     showItems();
+    document.getElementById("add-edit-form").onsubmit = addEditItem;
+    document.getElementById("add-link").onclick = showHideAdd;
+
+    document.querySelector(".close").onclick = () =>{
+        document.querySelector(".dialog").classList.add("hidden");
+    };
+
     document.getElementById("nav-toggle").onclick = toggleNav;
-}
+};
