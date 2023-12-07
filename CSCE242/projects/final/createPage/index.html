@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Help</title>
+        <link rel="stylesheet" href = "styles.css">
+        <script src="script.js"></script>
+        
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Risk of Rain 2 Wiki</h1>
+            <nav id="main-nav">
+                <div id="nav-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="main-nav-items">
+                    <ul>
+                        <li><a href="../homePage/index.html">Home</a></li>
+                        <li><a href="../itemsPage/index.html">Items</a></li>
+                        <li><a href="../survivorsPage/index.html">Survivors</a></li>
+                        <li><a href="../environmentsPage/index.html">Environments</a></li>
+                        <li><a href="../aboutPage/index.html">About</a></li>
+                        <li><a href="../formPage/index.html">Help</a></li>
+                        <li><a href="../createPage/index.html">Create</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <h2>Create Your Own Page</h2>
+            <p>If you want to create your own page, please enter your information below.</p>
+            <img src="images/Risk_of_Rain_2.jpg" id="ror-pic">
+            <form id="form">
+                <ul id="questions">
+                    <li>
+                        <p><label>Username</label></p>
+                        <p><input id="username" required></p>
+                    </li>
+                    <li>
+                        <p><label id="name-label">Name</label></p>
+                        <p><input id="name-input" required></p>
+                    </li>
+                    <li>
+                        <p><label>Page Name</label></p>
+                        <p><input id="page-name" required></p>
+                    </li>
+                    <li>
+                        <p><label>Type</label></p>
+                        <p><select name="type">
+                            <option value="item">Item</option>
+                            <option value="survivor">Survivor</option>
+                            <option value="environment">Environment</option>
+                            <option value="other">Other</option>
+                        </select></p>
+                    </li>
+                    <li>
+                        <p><label for="user-content">Content:</label></p>
+                        <p><textarea id="user-content"></textarea></p>                    </li>
+                    <li id="checkbox">
+                        <input type="checkbox" name="terms">
+                        <label>I agree to the terms.</label>
+                    </li>
+                    <li>
+                        <p><button type="submit">Submit</button></p>
+                    </li>
+                    <li>
+                        <p class="hidden" id="result">Thank you for submitting!</p>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script src="form.js"></script>
+    </body>
+    
+</html>
