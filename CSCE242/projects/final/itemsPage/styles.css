@@ -21,6 +21,14 @@ body{
 .hidden{
     display:none;
 }
+.transparent{
+    opacity: 0;
+}
+#submit-msg{
+    font-size: 1em;
+    margin: auto;
+    margin-right: 100px;
+}
 
 /*header*/
 h1{
@@ -50,29 +58,68 @@ h1{
 h2{
     text-align: center;
 }
+section{
+    background-color: rgb(136, 136, 136,.6);
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
 
-#items ul{
+section ul{
     list-style-type: none;
     
 }
-#items li{
-    background-color: rgb(136, 136, 136,.6);
-    border: 1px solid black;
-}
-#items a{
+
+section a{
     text-decoration: none;
     color: black;
 }
-#items p{
-    position: relative;
-    margin:auto;
-    text-align: center;
-    
-    z-index: 2;
-}
-#items img{
+
+section img{
     width: 70px;
     height: 70px;
+}
+
+#edit-link{
+    float: right;
+}
+
+#delete-link{
+    float: right;
+}
+#edit-link, #delete-link{
+    padding: 10px;
+}
+#edit-link:hover, #delete-link:hover{
+    cursor: pointer;
+    color: darkgray;
+}
+
+/*form*/
+#add-edit-container{
+    background-color:deepskyblue;
+    padding: 10px;
+    width: 700px;
+}
+label{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+a{
+    color: black;
+}
+span{
+    font-size: 2em;
+    float: right;
+    padding-right: 5px;
+}
+#team-characters{
+    width: 300px;
+}
+span:hover{
+    cursor: pointer;
+    color: darkgray;
 }
 
 @media (min-width: 900px){
@@ -90,5 +137,8 @@ h2{
 @media (max-width: 900px){
     #main-header{
         margin-bottom: 100px;
+    }
+    #main-nav-items ul{
+        display:flex;
     }
 }

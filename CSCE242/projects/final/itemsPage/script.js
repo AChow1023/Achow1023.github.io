@@ -8,6 +8,17 @@ const showItems = async () => {
         let section = document.createElement("section");
         itemDiv.append(section);
 
+        const eLink = document.createElement("a");
+        eLink.innerHTML = "Edit ";
+        eLink.id = "edit-link";
+        
+        const dLink = document.createElement("a");
+        dLink.innerHTML = "Delete";
+        dLink.id = "delete-link";
+
+        section.append(eLink);
+        
+
         let h3 = document.createElement("h3");
         h3.innerHTML = item.color + ' Items';
         let aT = document.createElement("a");
@@ -15,7 +26,14 @@ const showItems = async () => {
         aT.append(h3);
         section.append(aT);
 
+        let ul = document.createElement("ul");
         
+        let liD = document.createElement("li");
+        liD.innerHTML = item.description;
+        ul.append(liD);
+
+        section.append(ul);
+
         if(item.img){
             let img = document.createElement("img");
             let aB = document.createElement("a");
@@ -23,26 +41,10 @@ const showItems = async () => {
             aB.append(img);
             section.append(aB);
             img.src = "https://projectfinal-lw0r.onrender.com/" + item.img;
-            }
-        
-        let ul = document.createElement("ul");
-        
-        let liD = document.createElement("li");
-        liD.innerHTML = 'Description: ' + item.description;
-        ul.append(liD);
+        }
 
-        section.append(ul);
-        
-        const dLink = document.createElement("a");
-        dLink.innerHTML = "Delete";
-        dLink.id = "delete-link";
-        
-        const eLink = document.createElement("a");
-        eLink.innerHTML = "Edit";
-        eLink.id = "edit-link";
-
-        section.append(eLink);
         section.append(dLink);
+        
 
         eLink.onclick = (e) => {
             e.preventDefault();
@@ -97,9 +99,9 @@ const getJSON = async () => {
 const populateEditForm = (item) => {
     const form = document.getElementById("add-edit-form");
     form._id.value = item._id;
-    form.name.value = item.color;
-    form.height.value = item.description;
-    form.nationality.value = item.link;
+    form.color.value = item.color;
+    form.description.value = item.description;
+    form.link.value = item.link;
 };
 
 const addEditItem = async (e) => {
@@ -110,7 +112,7 @@ const addEditItem = async (e) => {
 
     if(form._id.value == -1){
     formData.delete("_id");
-    response = await fetch("https://projectfinal-lw0r.onrender.com/api/items", {
+    response = await fetch("https://projectfinal-lw0r.onrender.com/api/items/", {
         method: "POST",
         body: formData
     });
