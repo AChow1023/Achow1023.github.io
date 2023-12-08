@@ -64,9 +64,12 @@ section{
     margin-bottom: 15px;
 }
 
+section h3{
+    padding-left: 10px;
+}
+
 section ul{
     list-style-type: none;
-    
 }
 
 section a{
