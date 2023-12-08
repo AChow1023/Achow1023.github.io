@@ -118,7 +118,7 @@ const addEditItem = async (e) => {
     });
     }
     else{
-        response = await fetch(`https://projectfinal-lw0r.onrender.com/api/items/${form._id.value}`, {
+        response = await fetch(`https://projectfinal-lw0r.onrender.com/api/items/${form._id.value}/`, {
             method: "PUT",
             body: formData
         });
