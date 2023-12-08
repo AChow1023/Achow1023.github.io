@@ -72,6 +72,10 @@ section ul{
     list-style-type: none;
 }
 
+section li{
+    width: 900px;
+}
+
 section a{
     text-decoration: none;
     color: black;
